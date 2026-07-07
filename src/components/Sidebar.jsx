@@ -16,9 +16,9 @@ const Sidebar = ({selected}) => {
         </div>
         <div className='border-b-2 border-[#252525]'>
           <ul class="list-none m-0 p-0 w-full">
-              <li className={`block text-[#a29e9f] border border-transparent py-1.5 px-4 m-1 hover:cursor-pointer hover:text-white ${selected == "dashboard" ? 'bg-[#171717] border-white/10 border rounded-xl text-white' : ''}`}><i className="fa-regular fa-house mr-3"></i><Link to="/dashboard">Dashboard</Link></li>
+              <Link to="/dashboard"><li className={`block text-[#a29e9f] border border-transparent py-1.5 px-4 m-1 hover:cursor-pointer hover:text-white ${selected == "dashboard" ? 'bg-[#171717] border-white/10 border rounded-xl text-white' : ''}`}><i className="fa-regular fa-house mr-3"></i>Dashboard</li></Link>
               <li className="block text-[#a29e9f] border border-transparent py-1.5 px-4 m-1 hover:cursor-pointer hover:text-white"><i class="fa-regular fa-bell mr-3"></i>Activity</li>
-              <li className={`flex text-[#a29e9f] border border-transparent flex-row py-1.5 px-4 m-1 hover:cursor-pointer hover:text-white ${selected == "settings" ? 'bg-[#171717] border-white/10 border rounded-xl text-white' : ''}`}><Settings className='w-5 mr-3'/><Link to="/settings" state={{selected: "application"}}>Settings</Link></li>
+              <Link to="/settings" state={{selected:"application"}}><li className={`flex text-[#a29e9f] border border-transparent flex-row py-1.5 px-4 m-1 hover:cursor-pointer hover:text-white ${selected == "settings" ? 'bg-[#171717] border-white/10 border rounded-xl text-white' : ''}`}><Settings className='w-5 mr-3'/>Settings</li></Link>
           </ul>
         </div>
         <div className='mt-5'>
