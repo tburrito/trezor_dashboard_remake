@@ -7,7 +7,8 @@ export const coinData = [
         price: "92118",
         change: "-3.7",
         abb: "BTC",
-        amount: "0"
+        amount: "0",
+        wallets:"1"
     },
     {
         name: "Ethereum",
@@ -17,7 +18,8 @@ export const coinData = [
         price: "2342.47",
         change: "-12.6",
         abb: "ETH",
-        amount: "0"
+        amount: "0",
+        wallets:"1"
     },
     {
         name: "Polygon PoS",
@@ -27,7 +29,8 @@ export const coinData = [
         price: "0.2826",
         change: "-0.4",
         abb: "POL",
-        amount: "0"
+        amount: "0",
+        wallets:"1"
     },
     {
         name: "Solana",
@@ -37,7 +40,8 @@ export const coinData = [
         price: "161.01",
         change: "1.7",
         abb: "SOL",
-        amount: "0"
+        amount: "0",
+        wallets:"1"
     },
     
 ]

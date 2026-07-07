@@ -11,8 +11,8 @@ function Dashboard() {
 
   return (
     <div className='flex'>
-        <Sidebar />
-        <div className='bg-[#171717] w-full h-full border'>
+        <Sidebar selected="dashboard"/>
+        <div className='bg-[#171717] w-full h-full'>
           <Topbar title="Dashboard"/>
           <div className='ml-65 mt-7 p-12.5 gap-15 flex flex-col'>
             <Portfolio/>

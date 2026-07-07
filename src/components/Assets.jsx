@@ -1,6 +1,6 @@
 import React from 'react'
 import { coinData } from '../data/coins.js'
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, WalletMinimal } from 'lucide-react';
 
 const Assets = () => {
 
@@ -27,7 +27,13 @@ const Assets = () => {
                             <td className='flex flex-col h-20 items-center justify-center '>
                                 <img src={coin.imgPath} alt="" className='w-12'/>
                             </td>
-                            <td className='text-left'>{coin.name}</td>
+                            <td className='text-left'>
+                                {coin.name}
+                                <div className='flex flex-row align-middle items-center text-xs text-[#a29e9f]'>
+                                    <WalletMinimal className='mr-1 w-4' color='#a29e9f'/>
+                                    {coin.wallets}
+                                </div>
+                                </td>
                             <td className='text-left'>${coin.balance}</td>
                             <td className='pr-5 text-right'>${Intl.NumberFormat('en-US').format(coin.price)}</td>
                             <td className={`pl-5 text-left ${parseFloat(coin.change, 10) < 0 ? 'text-[#a58a7b]' : 'text-[#5dd5b3]'}`}>
