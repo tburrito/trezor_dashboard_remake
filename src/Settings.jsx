@@ -15,7 +15,7 @@ const Settings = () => {
     return (
     <div className='flex'>
         <Sidebar selected="settings"/>
-        <div className='flex flex-col bg-[#171717] w-full h-full border '>
+        <div className='flex flex-col bg-[#171717] w-full h-full'>
           <Topbar title="Settings"/>
             <div className='ml-65 mt-14 pl-7 px-5 border-b-2 border-white/5'> 
                 <ul className='flex flex-row text-white text-lg'>

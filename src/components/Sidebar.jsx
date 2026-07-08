@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { coinData } from '../data/coins.js'
 import { Settings, Link as LinkIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Sidebar = ({selected}) => {
-
   return (
     <div className="h-svh w-65 bg-[#0e0f10] fixed top-0 left-0 z-1000">
         <div className='ml-1 mt-10 mb-6 flex flex-row'>
